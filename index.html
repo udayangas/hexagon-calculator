@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+	<head>
+		<title>Hexagon Calculator by Udayanga</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			property="og:title"
+			content="An interactive Hexagon Calculator by Udayanga Sandaruwan"
+		/>
+		<meta
+			name="description"
+			content="An interactive Hexagon Calculator by Udayanga Sandaruwan"
+		/>
+		<meta
+			property="og:description"
+			content="An interactive Hexagon Calculator by Udayanga Sandaruwan"
+		/>
+		<meta
+			name="keywords"
+			content="Udayanga, Udaya's portfolio, web development, front-end, Bootstrap 5.3, JavaScript, HTML, CSS, responsive design, hexagon calculator, geometry, interactive tool, personal project"
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://udayanga.net/hexagon-calculator/"
+		/>
+		<meta
+			property="og:image"
+			content="https://udayanga.net/hexagon-calculator/img/hexagon-diagram.png"
+		/>
+
+		<link href="https://udayanga.net/css/bootstrap.min.css" rel="stylesheet" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+
+		<link rel="manifest" href="https://udayanga.net/site.webmanifest" />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://udayanga.net/img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="https://udayanga.net/img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="https://udayanga.net/img/favicon-16x16.png"
+		/>
+	</head>
+
+	<body>
+		<main>
+			<div class="container my-4">
+				<h2 class="text-center">Hexagon Calculator by Udayanga</h2>
+			</div>
+
+			<div class="container">
+				<div class="row justify-content-center">
+					<div
+						class="col-lg-6 col-md-8 col-sm-12 order-1 order-md-2 calculator"
+					>
+						<h3 class="mt-4">Calculate Hexagon Measurements</h3>
+						<div class="mb-3">
+							<label for="side" class="form-label text-start w-100"
+								>Side (a):</label
+							>
+							<input
+								type="number"
+								class="form-control bg-dark text-white border-secondary"
+								id="side"
+							/>
+						</div>
+
+						<div class="mb-3">
+							<label for="longDiagonal" class="form-label text-start w-100"
+								>Long Diagonal (d):</label
+							>
+							<input
+								type="number"
+								class="form-control bg-dark text-white border-secondary"
+								id="longDiagonal"
+							/>
+						</div>
+
+						<div class="mb-3">
+							<label for="shortDiagonal" class="form-label text-start w-100"
+								>Short Diagonal (s):</label
+							>
+							<input
+								type="number"
+								class="form-control bg-dark text-white border-secondary"
+								id="shortDiagonal"
+							/>
+						</div>
+
+						<div class="mb-3">
+							<label
+								for="circumcircleRadius"
+								class="form-label text-start w-100"
+								>Circumcircle Radius (R):</label
+							>
+							<input
+								type="number"
+								class="form-control bg-dark text-white border-secondary"
+								id="circumcircleRadius"
+							/>
+						</div>
+
+						<div class="mb-3">
+							<label for="apothem" class="form-label text-start w-100"
+								>Apothem (r):</label
+							>
+							<input
+								type="number"
+								class="form-control bg-dark text-white border-secondary"
+								id="apothem"
+							/>
+						</div>
+
+						<div class="mb-3">
+							<label for="area" class="form-label text-start w-100"
+								>Area:</label
+							>
+							<input
+								type="number"
+								class="form-control bg-dark text-white border-secondary"
+								id="area"
+							/>
+						</div>
+
+						<div class="mb-3">
+							<label for="perimeter" class="form-label text-start w-100"
+								>Perimeter:</label
+							>
+							<input
+								type="number"
+								class="form-control bg-dark text-white border-secondary"
+								id="perimeter"
+							/>
+						</div>
+
+						<button class="btn btn-primary w-100 mt-3">Reset</button>
+					</div>
+
+					<div
+						class="col-lg-6 col-md-8 col-sm-12 order-2 order-md-1 description"
+					>
+						<h3 class="mt-4">About the Hexagon</h3>
+						<p>
+							A hexagon is a six-sided polygon with equal sides and angles in a
+							regular hexagon. It has several important measurements that define
+							its geometry.
+						</p>
+
+						<h4 class="mt-4">Measurements</h4>
+						<img
+							src="img/hexagon-diagram.png"
+							alt="Hexagon Diagram with Measurements"
+							class="img-fluid mx-auto d-block my-3"
+						/>
+						<ul>
+							<li><b>Side (a):</b> The length of one side of the hexagon.</li>
+							<li class="mt-2">
+								<b>Long Diagonal (d):</b> The distance between two opposite
+								vertices, equal to 2 times the side.
+							</li>
+							<li class="mt-2">
+								<b>Short Diagonal (s):</b> The distance between two non-adjacent
+								vertices, equal to √3 times the side.
+							</li>
+							<li class="mt-2">
+								<b>Circumcircle Radius (R):</b> The radius of the circle that
+								passes through all the vertices of the hexagon, equal to the
+								side length.
+							</li>
+							<li class="mt-2">
+								<b>Apothem (r):</b> The perpendicular distance from the center
+								to one side, equal to (√3/2) * a.
+							</li>
+							<li class="mt-2">
+								<b>Area:</b> The total surface area of the hexagon, calculated
+								as (3√3/2) * a².
+							</li>
+							<li class="mt-2">
+								<b>Perimeter:</b> The total length of all six sides, equal to 6
+								times the side length.
+							</li>
+						</ul>
+
+						<h4 class="mt-4">Formulas Used</h4>
+						<p>
+							When the side length (a) is given, the other measurements can be
+							calculated as follows:
+						</p>
+						<ul>
+							<li><b>Long Diagonal (d) =</b> 2 x a</li>
+							<li class="mt-2"><b>Short Diagonal (s) =</b> √3 x a</li>
+							<li class="mt-2"><b>Circumcircle Radius (R) =</b> a</li>
+							<li class="mt-2"><b>Apothem (r) =</b> (√3/2) x a</li>
+							<li class="mt-2"><b>Area =</b> (3√3/2) x a²</li>
+							<li class="mt-2"><b>Perimeter =</b> 6 x a</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="container my-5">
+				<hr class="my-4" />
+				<h4 class="mb-3">Explore the Project Source Code</h4>
+				<p class="lead">
+					This Hexagon Calculator is an open-source project available on GitHub.
+					You can find the full source code for both this web application and a
+					Python desktop version in the repository.
+				</p>
+				<p class="mb-4">
+					<a
+						href="https://github.com/udayangas/hexagon-calculator"
+						class="btn btn-outline-primary btn"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i class="bi bi-github me-2"></i>View on GitHub
+					</a>
+				</p>
+				<p class="text-muted">
+					Interested in the desktop version? Check out the
+					<a
+						href="https://github.com/udayangas/hexagon-calculator/tree/main/python-app"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-decoration-none"
+					>
+						Python application
+					</a>
+					in the repository.
+				</p>
+				<hr class="my-4" />
+				<h4 class="mb-3">License :</h4>
+				<p>MIT</p>
+				<hr class="my-4" />
+				<h4 class="mb-3">Author :</h4>
+				<p>
+					<a
+						href="https://udayanga.net"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-decoration-none"
+					>
+						Udayanga Sandaruwan
+					</a>
+				</p>
+			</div>
+
+			<script src="https://udayanga.net/js/bootstrap.bundle.min.js"></script>
+			<script src="js/script.js" defer></script>
+		</main>
+
+		<footer class="d-flex flex-wrap py-3 my-4 bg-body-secondary">
+			<div
+				class="container d-flex flex-sm-row align-items-center justify-content-center my-2 text-body-secondary"
+			>
+				<a href="https://udayanga.net" class="me-2" aria-label="logo">
+					<img src="https://udayanga.net/img/logo.png" alt="logo" width="50" />
+				</a>
+				<p class="my-auto me-md-auto">© 2025 Udayanga Sandaruwan.</p>
+				<ul class="nav">
+					<li class="ms-2">
+						<a
+							class="text-body-secondary"
+							href="https://linkedin.com/in/udayangas"
+							aria-label="Linkedin"
+						>
+							<i class="bi bi-linkedin"></i>
+						</a>
+					</li>
+					<li class="ms-3">
+						<a
+							class="text-body-secondary"
+							href="https://github.com/udayangas"
+							aria-label="Github"
+						>
+							<i class="bi bi-github"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
