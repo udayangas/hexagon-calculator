@@ -86,4 +86,4 @@ Feel free to fork this repository, make improvements, or suggest new features. P
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](../LICENSE).
