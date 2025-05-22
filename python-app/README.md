@@ -78,7 +78,7 @@ The application window will appear, allowing you to input a value into any of th
 
 ## Screenshot
 
-<img src="Screenshot.png" alt="drawing" width="700"/>
+<img src="Screenshot.png" alt="Screenshot of Hexagon Calculator" width="700"/>
 
 ## Contributing
 
