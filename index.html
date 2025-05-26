@@ -27,7 +27,7 @@
 		/>
 		<meta
 			property="og:image"
-			content="https://udayanga.net/hexagon-calculator/img/hexagon-diagram.png"
+			content="https://udayanga.net/hexagon-calculator/img/hexagon-diagram.svg"
 		/>
 
 		<link href="https://udayanga.net/css/bootstrap.min.css" rel="stylesheet" />
@@ -75,8 +75,10 @@
 								>Side (a):</label
 							>
 							<input
-								type="number"
-								class="form-control bg-dark text-white border-secondary"
+								type="text"
+								inputmode="decimal"
+								pattern="[0-9]*\.?[0-9]*"
+								class="form-control border-secondary"
 								id="side"
 							/>
 						</div>
@@ -86,8 +88,10 @@
 								>Long Diagonal (d):</label
 							>
 							<input
-								type="number"
-								class="form-control bg-dark text-white border-secondary"
+								type="text"
+								inputmode="decimal"
+								pattern="[0-9]*\.?[0-9]*"
+								class="form-control border-secondary"
 								id="longDiagonal"
 							/>
 						</div>
@@ -97,8 +101,10 @@
 								>Short Diagonal (s):</label
 							>
 							<input
-								type="number"
-								class="form-control bg-dark text-white border-secondary"
+								type="text"
+								inputmode="decimal"
+								pattern="[0-9]*\.?[0-9]*"
+								class="form-control border-secondary"
 								id="shortDiagonal"
 							/>
 						</div>
@@ -110,8 +116,10 @@
 								>Circumcircle Radius (R):</label
 							>
 							<input
-								type="number"
-								class="form-control bg-dark text-white border-secondary"
+								type="text"
+								inputmode="decimal"
+								pattern="[0-9]*\.?[0-9]*"
+								class="form-control border-secondary"
 								id="circumcircleRadius"
 							/>
 						</div>
@@ -121,8 +129,10 @@
 								>Apothem (r):</label
 							>
 							<input
-								type="number"
-								class="form-control bg-dark text-white border-secondary"
+								type="text"
+								inputmode="decimal"
+								pattern="[0-9]*\.?[0-9]*"
+								class="form-control border-secondary"
 								id="apothem"
 							/>
 						</div>
@@ -132,8 +142,10 @@
 								>Area:</label
 							>
 							<input
-								type="number"
-								class="form-control bg-dark text-white border-secondary"
+								type="text"
+								inputmode="decimal"
+								pattern="[0-9]*\.?[0-9]*"
+								class="form-control border-secondary"
 								id="area"
 							/>
 						</div>
@@ -143,8 +155,10 @@
 								>Perimeter:</label
 							>
 							<input
-								type="number"
-								class="form-control bg-dark text-white border-secondary"
+								type="text"
+								inputmode="decimal"
+								pattern="[0-9]*\.?[0-9]*"
+								class="form-control border-secondary"
 								id="perimeter"
 							/>
 						</div>
@@ -164,7 +178,7 @@
 
 						<h4 class="mt-4">Measurements</h4>
 						<img
-							src="img/hexagon-diagram.png"
+							src="img/hexagon-diagram.svg"
 							alt="Hexagon Diagram with Measurements"
 							class="img-fluid mx-auto d-block my-3"
 						/>
@@ -246,7 +260,16 @@
 				</p>
 				<hr class="my-4" />
 				<h4 class="mb-3">License :</h4>
-				<p>MIT</p>
+				<p>
+					<a
+						href="https://github.com/udayangas/hexagon-calculator/blob/main/LICENSE"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-decoration-none"
+						>MIT</a
+					>
+				</p>
+
 				<hr class="my-4" />
 				<h4 class="mb-3">Author :</h4>
 				<p>
